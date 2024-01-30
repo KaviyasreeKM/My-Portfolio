@@ -35,11 +35,11 @@ section{
     padding: 0 80px;
     margin: auto;
 }
-.about, .services, .skills, .teams, .contact, footer{
+.about, .Education, .skills, .project, .contact, footer{
     font-family: 'Poppins', sans-serif;
 }
 .about .about-content,
-.services .serv-content,
+.Education .serv-content,
 .skills .skills-content,
 .contact .contact-content{
     display: flex;
@@ -241,10 +241,11 @@ section .title::after{
 .about .about-content .right p{
     text-align: justify;
 }
-.about .about-content .right a{
+
+.about .about-content .right button{
     display: inline-block;
     background: crimson;
-    color: #fff;
+    color: aliceblue;
     font-size: 20px;
     font-weight: 500;
     padding: 10px 30px;
@@ -252,27 +253,29 @@ section .title::after{
     border-radius: 6px;
     border: 2px solid crimson;
     transition: all 0.3s ease;
+    font-family: 'Poppins', sans-serif;
 }
-.about .about-content .right a:hover{
+.about .about-content .right button:hover{
     color: crimson;
     background: none;
+    font-family: 'Poppins', sans-serif;
 }
 
-/* services section styling */
-.services, .teams{
+/* Education section styling */
+.Education, .project{
     color:#fff;
     background: #111;
 }
-.services .title::before,
-.teams .title::before{
+.Education .title::before,
+.project .title::before{
     background: #fff;
 }
-.services .title::after,
-.teams .title::after{
+.Education .title::after,
+.project .title::after{
     background: #111;
     content: "what i provide";
 }
-.services .serv-content .card{
+.Education .serv-content .card{
     width: calc(33% - 20px);
     background: #222;
     text-align: center;
@@ -281,24 +284,24 @@ section .title::after{
     cursor: pointer;
     transition: all 0.3s ease;
 }
-.services .serv-content .card:hover{
+.Education .serv-content .card:hover{
     background: crimson;
 }
-.services .serv-content .card .box{
+.Education .serv-content .card .box{
     transition: all 0.3s ease;
 }
-.services .serv-content .card:hover .box{
+.Education .serv-content .card:hover .box{
     transform: scale(1.05);
 }
-.services .serv-content .card i{
+.Education .serv-content .card i{
     font-size: 50px;
     color: crimson;
     transition: color 0.3s ease;
 }
-.services .serv-content .card:hover i{
+.Education .serv-content .card:hover i{
     color: #fff;
 }
-.services .serv-content .card .text{
+.Education .serv-content .card .text{
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
@@ -367,23 +370,26 @@ section .title::after{
     width: 90%;
 }
 .skills-content .right .css::before{
-    width: 60%;
-}
-.skills-content .right .js::before{
     width: 80%;
 }
-.skills-content .right .php::before{
-    width: 50%;
+.skills-content .right .js::before{
+    width: 40%;
+}
+.skills-content .right .c::before{
+    width: 70%;
+}
+.skills-content .right .java::before{
+    width: 60%;
 }
 .skills-content .right .mysql::before{
     width: 70%;
 }
 
-/* teams section styling */
-.teams .title::after{
+/* project section styling */
+.project .title::after{
     content: "who with me";
 }
-.teams .carousel .card{
+.project .carousel .card{
     background: #222;
     border-radius: 6px;
     padding: 25px 35px;
@@ -391,25 +397,25 @@ section .title::after{
     overflow: hidden;
     transition: all 0.3s ease;
 }
-.teams .carousel .card:hover{
+.project .carousel .card:hover{
     background: crimson;
 }
-.teams .carousel .card .box{
+.project .carousel .card .box{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     transition: all 0.3s ease;
 }
-.teams .carousel .card:hover .box{
+.project .carousel .card:hover .box{
     transform: scale(1.05);
 }
-.teams .carousel .card .text{
+.project .carousel .card .text{
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
 }
-.teams .carousel .card img{
+.project .carousel .card img{
     height: 150px;
     width: 150px;
     object-fit: cover;
@@ -417,7 +423,7 @@ section .title::after{
     border: 5px solid crimson;
     transition: all 0.3s ease;
 }
-.teams .carousel .card:hover img{
+.project .carousel .card:hover img{
     border-color: #fff;
 }
 .owl-dots{
@@ -620,7 +626,7 @@ footer span a:hover{
     .about .about-content .right{
         flex: 100%;
     }
-    .services .serv-content .card{
+    .Education .serv-content .card{
         width: calc(50% - 10px);
         margin-bottom: 20px;
     }
@@ -644,7 +650,7 @@ footer span a:hover{
     .home .home-content a{
         font-size: 20px;
     }
-    .services .serv-content .card{
+    .Education .serv-content .card{
         width: 100%;
     }
 }
