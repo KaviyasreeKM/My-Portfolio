@@ -273,7 +273,7 @@ section .title::after{
 .Education .title::after,
 .project .title::after{
     background: #111;
-    content: "what i provide";
+    content: "where I studied";
 }
 .Education .serv-content .card{
     width: calc(33% - 20px);
